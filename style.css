@@ -1,0 +1,22 @@
+/* Desktop */
+.logo-desktop {
+  height: 40px;
+  width: auto;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .logo-mobile {
+    height: 30px;
+    width: auto;
+  }
+}
+
+        /* tester tailwind */
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.85) 0%, rgba(30, 41, 59, 0.75) 100%);
+        }
+        
