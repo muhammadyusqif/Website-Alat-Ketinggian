@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Navbar with dropdown -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <!-- <span class="font-bold text-xl text-gray-800">Logo</span> -->
+                    <img class="w-25 h-10" src="f:\YUSQI\Website\src\logo-rental-alat-berat-surabaya 1.svg" alt="">
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-600 hover:text-blue-500 transition duration-300">Home</a>
+                    
+                    <!-- Dropdown -->
+                    <div class="relative group">
+                        <button class="text-gray-600 hover:text-blue-500 transition duration-300 flex items-center">
+                            Products
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg mt-2 py-2 w-48">
+                            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Web Design</a>
+                            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Development</a>
+                            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Marketing</a>
+                        </div>
+                    </div>
+
+                    <a href="#" class="text-gray-600 hover:text-blue-500 transition duration-300">About</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-500 transition duration-300">Contact</a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md transition duration-300">
+                        Get Started
+                    </button>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button class="text-gray-600 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen py-8">
+    <div class="max-w-7xl mx-auto px-4">
+        <!-- Header Section -->
+        <!-- <div class="text-center mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Data Performa Teknologi 2024</h1>
+            <p class="text-gray-600 max-w-2xl mx-auto">Scroll horizontal untuk melihat berbagai analisis dan statistik teknologi terkini</p>
+        </div> -->
+
+        <!-- Horizontal Scroll Container -->
+        <div class="relative">
+            <!-- Scroll Left Button -->
+            <button id="scrollLeft" class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-gray-800 rounded-full w-10 h-10 flex items-center justify-center shadow-lg transition-all duration-200 hover:scale-110 -ml-5">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <!-- Scrollable Cards Container -->
+            <div id="scrollContainer" class="flex space-x-6 overflow-x-auto scrollbar-hide py-4 px-2 scroll-smooth">
+                
+                <!-- Card 1 - AI Technology -->
+                <div class="flex-shrink-0 w-80 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="relative">
+                        <img 
+                            src="f:\YUSQI\Website\src\card boom lift.svg" 
+                            alt="AI Technology" 
+                            class="w-full h-full object-cover rounded-t-2xl"
+                        >
+                        <!-- <div class="absolute top-4 left-4">
+                            <span class="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-3 py-1 rounded-full text-xs font-bold">
+                                AI Tech
+                            </span>
+                        </div> -->
+                    </div>
+                    
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-[#0D2B4D] mb-3">Genie boom lift articulating Z-45/25</h3>
+                        
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm">
+                                <!-- <thead>
+                                    <tr class="border-b border-gray-200">
+                                        <th class="text-left py-2 text-gray-600 font-semibold">Metrik</th>
+                                        <th class="text-right py-2 text-gray-600 font-semibold">Nilai</th>
+                                    </tr>
+                                </thead> -->
+                                <tbody>
+                                    <tr class="border-b border-gray-100">
+                                        <td class="py-2 font-bold text-[#0D2B4D]">Tenaga</td>
+                                        <!-- <td class="py-2 text-right font-bold text-green-600">94.5%</td> -->
+                                        <td class="py-2 text-right font-bold text-gray-600">Diesel/listrik (DC)</td>
+                                    </tr>
+                                    <tr class="border-b border-gray-100">
+                                        <td class="py-2 font-bold text-[#0D2B4D]">Jangkauan ketinggian</td>
+                                        <td class="py-2 text-right font-bold text-gray-600">16 Meter</td>
+                                    </tr>
+                                    <tr class="border-b border-gray-100">
+                                        <td class="py-2 text-gray-600">Model Size</td>
+                                        <td class="py-2 text-right font-medium">245 MB</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 text-gray-600">Inference Speed</td>
+                                        <td class="py-2 text-right font-bold text-blue-600">0.45s</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 - Cloud Computing -->
+                <div class="flex-shrink-0 w-80 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="relative">
+                        <img 
+                            src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                            alt="Cloud Computing" 
+                            class="w-full h-48 object-cover rounded-t-2xl"
+                        >
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-3 py-1 rounded-full text-xs font-bold">
+                                Cloud
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Cloud Computing</h3>
+                        <p class="text-gray-600 text-sm mb-4">Statistik penggunaan dan performa layanan cloud</p>
+                        
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm">
+                                <thead>
+                                    <tr class="border-b border-gray-200">
+                                        <th class="text-left py-2 text-gray-600 font-semibold">Layanan</th>
+                                        <th class="text-right py-2 text-gray-600 font-semibold">Uptime</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b border-gray-100">
+                                        <td class="py-2 text-gray-600">Compute</td>
+                                        <td class="py-2 text-right font-bold text-green-600">99.95%</td>
+                                    </tr>
+                                    <tr class="border-b border-gray-100">
+                                        <td class="py-2 text-gray-600">Storage</td>
+                                        <td class="py-2 text-right font-bold text-green-600">99.99%</td>
+                                    </tr>
+                                    <tr class="border-b border-gray-100">
+                                        <td class="py-2 text-gray-600">Database</td>
+                                        <td class="py-2 text-right font-bold text-green-600">99.98%</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 text-gray-600">Network</td>
+                                        <td class="py-2 text-right font-bold text-green-600">99.97%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 - Cybersecurity -->
+                <div class="flex-shrink-0 w-80 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="relative">
+                        <img 
+                            src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                            alt="Cybersecurity" 
+                            class="w-full h-48 object-cover rounded-t-2xl"
+                        >
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-gradient-to-r from-red-500 to-orange-500 text-white px-3 py-1 rounded-full text-xs font-bold">
+                                Security
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Keamanan Siber</h3>
+                        <p class="text-gray-600 text-sm mb-4">Data keamanan dan ancaman terkini</p>
+                        
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm">
+                                <thead>
+                                    <tr class="border-b border-gray-200">
+                                        <th class="text-left py-2 text-gray-600 font-semibold">Ancaman</th>
+                                        <th class="text-right py-2 text-gray-600 font-semibold">Level</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b border-gray-100">
+                                        <td class="py-2 text-gray-600">Phishing</td>
+                                        <td class="py-2 text-right">
+                                            <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-xs font-bold">Tinggi</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b border-gray-100">
+                                        <td class="py-2 text-gray-600">Malware</td>
+                                        <td class="py-2 text-right">
+                                            <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs font-bold">Sedang</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-b border-gray-100">
+                                        <td class="py-2 text-gray-600">DDoS</td>
+                                        <td class="py-2 text-right">
+                                            <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs font-bold">Rendah</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 text-gray-600">Ransomware</td>
+                                        <td class="py-2 text-right">
+                                            <span class="bg-red-100 text-red-800 px-2 py-1 rounded text-xs font-bold">Tinggi</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 - IoT Devices -->
+                <div class="flex-shrink-0 w-80 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="relative">
+                        <img 
+                            src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                            alt="IoT Devices" 
+                            class="w-full h-48 object-cover rounded-t-2xl"
+                        >
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-gradient-to-r from-green-500 to-emerald-500 text-white px-3 py-1 rounded-full text-xs font-bold">
+                                IoT
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Internet of Things</h3>
+                        <p class="text-gray-600 text-sm mb-4">Statistik perangkat IoT dan konektivitas</p>
+                        
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm">
+                                <thead>
+                                    <tr class="border-b border-gray-200">
+                                        <th class="text-left py-2 text-gray-600 font-semibold">Perangkat</th>
+                                        <th class="text-right py-2 text-gray-600 font-semibold">Jumlah</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b border-gray-100">
+                                        <td class="py-2 text-gray-600">Smart Home</td>
+                                        <td class="py-2 text-right font-bold">2.3M</td>
+                                    </tr>
+                                    <tr class="border-b border-gray-100">
+                                        <td class="py-2 text-gray-600">Industrial</td>
+                                        <td class="py-2 text-right font-bold">1.8M</td>
+                                    </tr>
+                                    <tr class="border-b border-gray-100">
+                                        <td class="py-2 text-gray-600">Healthcare</td>
+                                        <td class="py-2 text-right font-bold">950K</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 text-gray-600">Automotive</td>
+                                        <td class="py-2 text-right font-bold">1.2M</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 - Big Data -->
+                <div class="flex-shrink-0 w-80 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="relative">
+                        <img 
+                            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                            alt="Big Data" 
+                            class="w-full h-48 object-cover rounded-t-2xl"
+                        >
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-gradient-to-r from-indigo-500 to-purple-500 text-white px-3 py-1 rounded-full text-xs font-bold">
+                                Data
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Big Data Analytics</h3>
+                        <p class="text-gray-600 text-sm mb-4">Kapasitas dan analisis data skala besar</p>
+                        
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm">
+                                <thead>
+                                    <tr class="border-b border-gray-200">
+                                        <th class="text-left py-2 text-gray-600 font-semibold">Parameter</th>
+                                        <th class="text-right py-2 text-gray-600 font-semibold">Volume</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b border-gray-100">
+                                        <td class="py-2 text-gray-600">Data Processed</td>
+                                        <td class="py-2 text-right font-bold">15.2 PB</td>
+                                    </tr>
+                                    <tr class="border-b border-gray-100">
+                                        <td class="py-2 text-gray-600">Processing Speed</td>
+                                        <td class="py-2 text-right font-bold text-blue-600">2.4 TB/s</td>
+                                    </tr>
+                                    <tr class="border-b border-gray-100">
+                                        <td class="py-2 text-gray-600">Storage Used</td>
+                                        <td class="py-2 text-right font-bold">8.7 PB</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-2 text-gray-600">Query Time</td>
+                                        <td class="py-2 text-right font-bold text-green-600">0.8s avg</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Scroll Right Button -->
+            <button id="scrollRight" class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/80 hover:bg-white text-gray-800 rounded-full w-10 h-10 flex items-center justify-center shadow-lg transition-all duration-200 hover:scale-110 -mr-5">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <!-- Navigation Dots -->
+        <!-- <div class="flex justify-center space-x-2 mt-6">
+            <div class="w-3 h-3 bg-blue-500 rounded-full dot-indicator"></div>
+            <div class="w-3 h-3 bg-gray-300 rounded-full dot-indicator"></div>
+            <div class="w-3 h-3 bg-gray-300 rounded-full dot-indicator"></div>
+            <div class="w-3 h-3 bg-gray-300 rounded-full dot-indicator"></div>
+            <div class="w-3 h-3 bg-gray-300 rounded-full dot-indicator"></div>
+        </div> -->
+
+        <!-- Info Text -->
+        <!-- <div class="text-center mt-6">
+            <p class="text-gray-500 text-sm flex items-center justify-center">
+                <i class="fas fa-mouse-pointer mr-2"></i>
+                Gunakan tombol panah atau scroll horizontal untuk melihat lebih banyak card
+            </p>
+        </div> -->
+        
+    </div>
+    <footer>
+            <!-- <div class="bg-[#0D2B4D] max-w-7xl px-4 mx-auto">
+                <img src="f:\YUSQI\Website\src\logo-rental-alat-berat-surabaya 1.svg" alt="" sizes="" srcset="">
+                <p class="text-[#fff]">Jl. Dukuh Kupang Timur XIII No.14, Pakis,</p>
+                <p class="text-[#fff]">Kec. Sawahan, Surabaya, Jawa Timur 60256</p>
+            </div> -->
+            <div class="bg-[#0D2B4D] mx-auto px-4 py-8">
+            <div class=" grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                
+                <!-- Logo -->
+                <div class="flex items-center space-x-3 px-4">
+                    <!-- <div class="w-25 h-25 bg-blue-500 rounded-lg flex items-center justify-center"> -->
+                    <div class="w-25 h-25 flex items-center justify-center">
+                        <img class="w-25 h-10" src="f:\YUSQI\Website\src\logo-rental-alat-berat-surabaya 1.svg" alt="">
+                        <!-- <span class="text-white font-bold text-lg">L</span> -->
+                    </div>
+                    <!-- <div>
+                        <h2 class="text-xl font-bold text-gray-800">Logo</h2>
+                        <p class="text-gray-500 text-sm">Simple & Clean</p>
+                    </div> -->
+                </div>
+
+                <!-- Alamat -->
+                <div class="text-center md:text-left">
+                    <div class="space-y-1">
+                        <p class="text-[#fff]">Alamat Kami</p>
+                        <p class="text-[#fff] text-sm">
+                            Jl. Dukuh Kupang Timur XIII No.14, Pakis,<br>
+                            Kec. Sawahan, Surabaya, Jawa Timur 60256<br>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Contact Us -->
+                <div class="text-center md:text-right px-4">
+                    <div class="space-y-2">
+                        <p class="text-[#fff] font-medium">Contact Us</p>
+                        <div class="space-y-1 text-sm">
+                            <p class="text-[#fff]">email@example.com</p>
+                            <a aria-label="Chat on WhatsApp" href="https://wa.me/6281252496644"> <img alt="Chat on WhatsApp" src="f:\YUSQI\Website\src\WhatsAppButtonGreenMedium.svg">
+                            </a>
+                                <p class="text-[#fff]">+62 21 1234 5678
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-gray-100 mt-6 pt-6 text-center">
+                <p class="text-gray-500 text-sm">
+                    &copy; 2024 Company Name. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <style>
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+     <script>
+        const scrollContainer = document.getElementById('scrollContainer');
+        const scrollLeftBtn = document.getElementById('scrollLeft');
+        const scrollRightBtn = document.getElementById('scrollRight');
+        const dots = document.querySelectorAll('.dot-indicator');
+
+        const cardWidth = 320; // w-80 = 320px
+        const scrollAmount = cardWidth + 24; // card width + gap
+
+        scrollLeftBtn.addEventListener('click', () => {
+            scrollContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        });
+
+        scrollRightBtn.addEventListener('click', () => {
+            scrollContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        });
+
+        // Update navigation dots based on scroll position
+        scrollContainer.addEventListener('scroll', () => {
+            const scrollPos = scrollContainer.scrollLeft;
+            const activeIndex = Math.round(scrollPos / scrollAmount);
+            
+            dots.forEach((dot, index) => {
+                if (index === activeIndex) {
+                    dot.classList.remove('bg-gray-300');
+                    dot.classList.add('bg-blue-500');
+                } else {
+                    dot.classList.remove('bg-blue-500');
+                    dot.classList.add('bg-gray-300');
+                }
+            });
+        });
+
+        // Click on dots to scroll to specific card
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                scrollContainer.scrollTo({
+                    left: index * scrollAmount,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                scrollContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            } else if (e.key === 'ArrowRight') {
+                scrollContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        });
+    </script>
+</body>
+</html>
