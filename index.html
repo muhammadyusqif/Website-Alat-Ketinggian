@@ -9,47 +9,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <style>
-        .aspect-portrait {
-            aspect-ratio: 3/4;
-        }
         
-        @media (max-width: 768px) {
-            .aspect-portrait {
-                aspect-ratio: 2/3;
-            }
-        }
-        @keyframes scroll {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(calc(-250px * 6));
-            }
-        }
-        
-        .slider {
-            animation: scroll 30s linear infinite;
-        }
-        
-        .slider:hover {
-            animation-play-state: paused;
-        }
-        
-        /* Untuk mencegah gap saat looping */
-        .slider::after {
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 100%;
-        }
     </style>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
     <title>Sewa Alat Ketinggian</title>
   </head>
   <body>
+    <section>
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
     <div class="container-fluid">
     <!-- <a class="navbar-brand" href="#"> -->
@@ -82,7 +49,7 @@
     </div>
   </div>
 </nav>
-
+</section>
 <!-- Hero text page -->
 <section class="relative h-screen flex items-center justify-center overflow-hidden ">
         <!-- Background Image -->
@@ -176,10 +143,12 @@
             </div>
         </div>
     </section>
+
+    <!-- Card Katalog alat-->
     <section class="px-12">
         <div class="text-center mb-12">
-            <h2 class=" text-5xl font-bold text-gray-800 mb-4">Katalog Alat Kami</h2>
-            <p class="text-gray-600 max-w-2xl mx-auto">Temukan Alat yang sesuai kebutuhan Proyek Anda dengan fungsionalitas terbaik.</p>
+            <h2 class=" text-4xl font-bold text-gray-800 mb-4">Katalog Alat Kami</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Konsultasikan alat yang sesuai kebutuhan proyek anda dengan fungsionalitas terbaik.</p>
         </div>
 
         <!-- Grid Produk dengan Card Portrait Tanpa Carousel -->
@@ -215,7 +184,7 @@
                         </div> -->
                     </div>
                     <div class="flex justify-between items-center py-10">
-                        <button class="mx-auto bg-[#FACC15] font-semibold hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1 text-white px-4 py-2 rounded-lg text-sm transition-colors">Detail Spesifikasi Alat</button>
+                        <button class="mx-auto bg-[#FACC15] font-semibold hover:bg-gray-800 transition-all duration-300 transform text-white px-4 py-2 rounded-lg text-sm transition-colors">Detail Spesifikasi Alat</button>
                     </div>
                 </div>
             </div>
@@ -255,7 +224,7 @@
                             <span class="text-xs text-green-600">Hemat 15%</span>
                         </div> -->
                         <!-- <button class="bg-primary hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm transition-colors">Spesifikasi Alat</button> -->
-                         <button class="mx-auto bg-[#FACC15] font-semibold hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1 text-white px-4 py-2 rounded-lg text-sm transition-colors">Detail Spesifikasi Alat</button>
+                         <button class="mx-auto bg-[#FACC15] font-semibold hover:bg-gray-800 transition-all duration-300 transform text-white px-4 py-2 rounded-lg text-sm transition-colors">Detail Spesifikasi Alat</button>
                     </div>
                 </div>
             </div>
@@ -292,7 +261,7 @@
                             <span class="text-primary font-bold block">Rp 3.750.000</span>
                             <span class="text-xs text-gray-500">/tahun</span>
                         </div> -->
-                        <button class="mx-auto bg-[#FACC15] font-semibold hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1 text-white px-4 py-2 rounded-lg text-sm transition-colors">Detail Spesifikasi Alat</button>
+                        <button class="mx-auto bg-[#FACC15] font-semibold hover:bg-gray-800 transition-all duration-300 transform text-white px-4 py-2 rounded-lg text-sm transition-colors">Detail Spesifikasi Alat</button>
                     </div>
                 </div>
             </div>
@@ -329,7 +298,7 @@
                             <span class="text-primary font-bold block">Rp 3.750.000</span>
                             <span class="text-xs text-gray-500">/tahun</span>
                         </div> -->
-                        <button class="mx-auto bg-[#FACC15] font-semibold hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1 text-white px-4 py-2 rounded-lg text-sm transition-colors">Detail Spesifikasi Alat</button>
+                        <button class="mx-auto bg-[#FACC15] font-semibold hover:bg-gray-800 transition-all duration-300 transform text-white px-4 py-2 rounded-lg text-sm transition-colors">Detail Spesifikasi Alat</button>
                     </div>
                 </div>
             </div>
@@ -366,7 +335,7 @@
                             <span class="text-primary font-bold block">Rp 3.750.000</span>
                             <span class="text-xs text-gray-500">/tahun</span>
                         </div> -->
-                        <button class="mx-auto bg-[#FACC15] font-semibold hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1 text-white px-4 py-2 rounded-lg text-sm transition-colors">Detail Spesifikasi Alat</button>
+                        <button class="mx-auto bg-[#FACC15] font-semibold hover:bg-gray-800 transition-all duration-300 transform text-white px-4 py-2 rounded-lg text-sm transition-colors">Detail Spesifikasi Alat</button>
                     </div>
                 </div>
             </div>
@@ -403,62 +372,63 @@
                             <span class="text-primary font-bold block">Rp 3.750.000</span>
                             <span class="text-xs text-gray-500">/tahun</span>
                         </div> -->
-                        <button class="mx-auto bg-[#FACC15] font-semibold hover:bg-gray-800 transition-all duration-300 transform hover:-translate-y-1 text-white px-4 py-2 rounded-lg text-sm transition-colors">Detail Spesifikasi Alat</button>
+                        <button class="mx-auto bg-[#FACC15] font-semibold hover:bg-gray-800 transition-all duration-300 transform text-white px-4 py-2 rounded-lg text-sm transition-colors">Detail Spesifikasi Alat</button>
                     </div>
                 </div>
             </div>
     </section>
-    <section class="py-16 w-full max-w-6xl mx-auto">
-        <h2 class="text-gray-800 text-5xl font-bold text-center mb-8">Mitra Kerja Yang Mempercayai Kami</h2>
+
+    <section class="py-20 w-full max-w-6xl mx-auto">
+        <h2 class="text-gray-800 text-4xl font-bold text-center mb-8">Mitra Kerja Yang Mempercayai Kami</h2>
         
         <div class="relative overflow-hidden">
             <!-- Gradient overlay untuk efek fade di sisi -->
-            <div class="absolute left-0 top-0 w-10 h-full bg-gradient-to-r from-gray-100 to-transparent z-10"></div>
-            <div class="absolute right-0 top-0 w-20 h-full bg-gradient-to-l from-gray-900 to-transparent z-10"></div>
+            <div class="absolute left-0 top-0 w-10 bg-gradient-to-r from-gray-100 to-transparent z-10"></div>
+            <div class="absolute right-0 top-0 w-10 bg-gradient-to-l from-gray-900 to-transparent z-10"></div>
             
             <div class="slider flex space-x-10">
                 <!-- Gambar 1 -->
-                <div class="flex-shrink-0 h-full overflow-hidden group">
+                <div class="flex-shrink-0 w-200 h-full overflow-hidden group">
                     <img 
                         src="src\logo hm sampoerna.png" 
                         alt="Landscape 1" 
-                        class="w-64 h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        class=" w-100 h-100 object-cover group-hover:scale-110 transition-transform duration-500"
                     >
                 </div>
                 
                 <!-- Gambar 2 -->
-                <div class="flex-shrink-0 w-64 h-full rounded-2xl overflow-hidden group">
+                <div class="flex-shrink-0 w-200 h-full rounded-2xl overflow-hidden group">
                     <img 
-                        src="src\logo hm sampoerna.png" 
+                        src="src\logo angkasa pura 1.svg" 
                         alt="Landscape 2" 
-                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        class="px-5 py-20 w-100 h-100 object-cover group-hover:scale-110 transition-transform duration-500"
                     >
                 </div>
                 
                 <!-- Gambar 3 -->
-                <div class="flex-shrink-0 w-64 h-full rounded-2xl overflow-hidden group">
+                <div class="flex-shrink-0 w-200 h-full rounded-2xl overflow-hidden group">
                     <img 
-                        src="src\logo hm sampoerna.png" 
+                        src="src\logo wika 2.svg" 
                         alt="Landscape 3" 
-                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        class="px-5 py-5 w-100 h-100 object-cover group-hover:scale-110 transition-transform duration-500"
                     >
                 </div>
                 
                 <!-- Gambar 4 -->
-                <div class="flex-shrink-0 w-64 h-48 rounded-2xl overflow-hidden group">
+                <div class="flex-shrink-0 w-200 h-full rounded-2xl overflow-hidden group">
                     <img 
-                        src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" 
+                        src="src\logo aice 1.svg" 
                         alt="Landscape 4" 
-                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        class="px-5 py-5 w-100 h-100 object-cover group-hover:scale-110 transition-transform duration-500"
                     >
                 </div>
                 
                 <!-- Gambar 5 -->
-                <div class="flex-shrink-0 w-64 h-48 rounded-2xl overflow-hidden group">
+                <div class="flex-shrink-0 w-200 h-full rounded-2xl overflow-hidden group">
                     <img 
-                        src="https://images.unsplash.com/photo-1505144808419-1957a94ca61e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" 
+                        src="src\logo-static-dark 1.svg" 
                         alt="Landscape 5" 
-                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        class="w-100 h-100 object-cover group-hover:scale-110 transition-transform duration-500"
                     >
                 </div>
                 
