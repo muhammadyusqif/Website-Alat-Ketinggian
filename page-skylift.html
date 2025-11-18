@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky Lift</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+    <!-- Google Fonts: Montserrat -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+         .hamburger {
+            display: block;
+            cursor: pointer;
+        }
+        .menu {
+            display: none;
+        }
+        .menu.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <nav class="bg-white shadow-lg p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <div class="h-12 font-bold mx-6">
+                <img class="h-11 items-center" src="src/logo-rental-alat-berat-surabaya 1.svg" alt="">
+            </div>
+            
+            <!-- Desktop Menu -->
+            <div class="mx-6 hidden md:flex space-x-4">
+                <a href="index.html">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300" >Home</button>
+                </a>
+                <a href="https://wa.me/6281252496644?text=Halo,%20saya%20ingin%20menanyakan%20ketersediaan%20alat%20anda,%20apa%20masih%20tersedia%20?">
+                    <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300" >Kontak Saya</button>
+                </a>
+            </div>
+            
+            <!-- Mobile Hamburger Menu -->
+            <div class="md:hidden">
+                <button class="hamburger text-gray-800 focus:outline-none" >
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="menu md:hidden mt-4">
+            <div class="flex flex-col space-y-2">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300" onclick="alert('Navigasi ke Home')">Home</button>
+                <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300" onclick="alert('Navigasi ke Kontak Saya')">Kontak Saya</button>
+            </div>
+        </div>
+    </nav>    
+
+    <section class="px-8 py-8">
+    <div class="flex overflow-x-auto gap-6 p-6 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-blue-300 ">
+        <!-- Kartu 1 -->
+        <div class="w-80 bg-gradient-to-b from-purple-50 to-white rounded-xl shadow-md overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col">
+            <img src="src\20210401155022eb88fb79ab7c4b5fb63955e4f634363f.webp" alt="Gambar 1" class="w-48 justify-center items-center object-contain rounded-lg mb-4">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-2">Genie Scissor Lift GS 1930 </h3>
+            <!-- <p class="text-gray-600 mb-4">Ini adalah teks deskripsi untuk kartu pertama. Anda bisa mengganti ini dengan konten yang relevan.</p> -->
+            <div>
+            <table class="w-full p-6 mb-4">
+                <tbody>
+                <tr class="">
+                    <td class="text-left p-2" >Tenaga</td>
+                    <td class="text-right px-2">Elektrik</td>
+                </tr>
+                <tr class="">
+                    <td class="text-left p-2" >Jangkauan</td>
+                    <td class="text-right px-2">6 Meter</td>
+                </tr>
+                </tbody>
+            </table>
+            <a href="https://wa.me/6281252496644?text=Halo,%20saya%20ingin%20menanyakan%20ketersediaan%20alat%20anda,%20apa%20masih%20tersedia%20?" 
+                class="text-gray-300 hover:text-white transition-colors duration-300 p-6">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300">Sewa Sekarang</button>
+            </a>    
+        </div>
+        </div>
+        
+        <!-- Kartu 2 -->
+        <!-- <div class="w-80 bg-white rounded-lg shadow-lg p-6 text-center flex-shrink-0">
+            <img src="https://via.placeholder.com/320x200?text=Gambar+2" alt="Gambar 2" class="w-full h-48 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Judul Kartu 2</h3>
+            <p class="text-gray-600 mb-4">Ini adalah teks deskripsi untuk kartu kedua. Konten ini bisa disesuaikan sesuai kebutuhan.</p>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300" onclick="alert('Tombol 2 diklik!')">Klik Saya</button>
+        </div> -->
+        <div class="w-80 bg-white rounded-lg shadow-lg p-6 text-center flex-shrink-0">
+            <img src="src\20210401155022eb88fb79ab7c4b5fb63955e4f634363f.webp" alt="Gambar 1" class="w-48 justify-center items-center object-contain rounded-lg mb-4">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-2">Jangkauan 12 Meter </h3>
+            <!-- <p class="text-gray-600 mb-4">Ini adalah teks deskripsi untuk kartu pertama. Anda bisa mengganti ini dengan konten yang relevan.</p> -->
+                <div>
+                <table class="w-full p-6 mb-4">
+                    <tbody>
+                    <tr class="">
+                        <td class="text-left p-2" >Tenaga</td>
+                        <td class="text-right px-2">Elektrik</td>
+                    </tr>
+                    <!-- <tr class="">
+                        <td class="text-left p-2" >Jangkauan</td>
+                        <td class="text-right px-2">10 Meter</td>
+                    </tr> -->
+                    </tbody>
+                </table>
+                <a href="https://wa.me/6281252496644?text=Halo,%20saya%20ingin%20menanyakan%20ketersediaan%20alat%20anda,%20apa%20masih%20tersedia%20?" 
+                    class="text-gray-300 hover:text-white transition-colors duration-300 p-6">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300">Sewa Sekarang</button>
+                </a>    
+            </div>
+        </div>
+        <!-- Kartu 3 -->
+        <!-- <div class="w-80 bg-white rounded-lg shadow-lg p-6 text-center flex-shrink-0">
+            <img src="https://via.placeholder.com/320x200?text=Gambar+3" alt="Gambar 3" class="w-full h-48 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Judul Kartu 3</h3>
+            <p class="text-gray-600 mb-4">Ini adalah teks deskripsi untuk kartu ketiga. Tambahkan lebih banyak kartu jika diperlukan.</p>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300" onclick="alert('Tombol 3 diklik!')">Klik Saya</button>
+        </div> -->
+        <div class="w-80 bg-white rounded-lg shadow-lg p-6 text-center flex-shrink-0">
+            <img src="src\20210401155022eb88fb79ab7c4b5fb63955e4f634363f.webp" alt="Gambar 1" class="w-48 justify-center items-center object-contain rounded-lg mb-4">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-2">Jangkauan 15 Meter  </h3>
+            <!-- <p class="text-gray-600 mb-4">Ini adalah teks deskripsi untuk kartu pertama. Anda bisa mengganti ini dengan konten yang relevan.</p> -->
+                <div>
+                <table class="w-full p-6 mb-4">
+                    <tbody>
+                    <tr class="">
+                        <td class="text-left p-2" >Tenaga</td>
+                        <td class="text-right px-2">Diesel</td>
+                    </tr>
+                    <!-- <tr class="">
+                        <td class="text-left p-2" >Jangkauan</td>
+                        <td class="text-right px-2">12 Meter</td>
+                    </tr> -->
+                    </tbody>
+                </table>
+                <a href="https://wa.me/6281252496644?text=Halo,%20saya%20ingin%20menanyakan%20ketersediaan%20alat%20anda,%20apa%20masih%20tersedia%20?" 
+                    class="text-gray-300 hover:text-white transition-colors duration-300 p-6">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300">Sewa Sekarang</button>
+                </a>    
+            </div>
+        </div>
+        <!-- Kartu 4 -->
+        <!-- <div class="w-80 bg-white rounded-lg shadow-lg p-6 text-center flex-shrink-0">
+            <img src="https://via.placeholder.com/320x200?text=Gambar+4" alt="Gambar 4" class="w-full h-48 object-cover rounded-lg mb-4">
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Judul Kartu 4</h3>
+            <p class="text-gray-600 mb-4">Ini adalah teks deskripsi untuk kartu keempat. Semua kartu memiliki ukuran yang sama.</p>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300" onclick="alert('Tombol 4 diklik!')">Klik Saya</button>
+        </div> -->
+        <div class="w-80 bg-white rounded-lg shadow-lg p-6 text-center flex-shrink-0">
+            <img src="src\20210401155022eb88fb79ab7c4b5fb63955e4f634363f.webp" alt="Gambar 1" class="w-48 justify-center items-center object-contain rounded-lg mb-4">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-2">Genie Scissor Lift GS-4047 </h3>
+            <!-- <p class="text-gray-600 mb-4">Ini adalah teks deskripsi untuk kartu pertama. Anda bisa mengganti ini dengan konten yang relevan.</p> -->
+                <div>
+                <table class="w-full p-6 mb-4">
+                    <tbody>
+                    <tr class="">
+                        <td class="text-left p-2" >Tenaga</td>
+                        <td class="text-right px-2">Elektrik</td>
+                    </tr>
+                    <tr class="">
+                        <td class="text-left p-2" >Jangkauan</td>
+                        <td class="text-right px-2">14 Meter</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <a href="https://wa.me/6281252496644?text=Halo,%20saya%20ingin%20menanyakan%20ketersediaan%20alat%20anda,%20apa%20masih%20tersedia%20?" 
+                    class="text-gray-300 hover:text-white transition-colors duration-300 p-6">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300">Sewa Sekarang</button>
+                </a>    
+            </div>
+        </div>
+
+        <div class="w-80 bg-white rounded-lg shadow-lg p-6 text-center flex-shrink-0">
+            <img src="src\20210401155022eb88fb79ab7c4b5fb63955e4f634363f.webp" alt="Gambar 1" class="w-48 justify-center items-center object-contain rounded-lg mb-4">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-2">Genie Scissor Lift GS-4655 </h3>
+            <!-- <p class="text-gray-600 mb-4">Ini adalah teks deskripsi untuk kartu pertama. Anda bisa mengganti ini dengan konten yang relevan.</p> -->
+                <div>
+                <table class="w-full p-6 mb-4">
+                    <tbody>
+                    <tr class="">
+                        <td class="text-left p-2" >Tenaga</td>
+                        <td class="text-right px-2">Elektrik</td>
+                    </tr>
+                    <tr class="">
+                        <td class="text-left p-2" >Jangkauan</td>
+                        <td class="text-right px-2">16 Meter</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <a href="https://wa.me/6281252496644?text=Halo,%20saya%20ingin%20menanyakan%20ketersediaan%20alat%20anda,%20apa%20masih%20tersedia%20?" 
+                    class="text-gray-300 hover:text-white transition-colors duration-300 p-6">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300">Sewa Sekarang</button>
+                </a>    
+            </div>
+        </div>
+        <!-- Tambahkan lebih banyak kartu di sini jika perlu -->
+    </div>
+    </section>
+        <!-- Footer with 2-Column Grid -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-4 py-8">
+            <!-- 2-Column Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Column 1: Company Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-2">
+                        <!-- <div class="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-cube text-white"></i>
+                        </div> -->
+                        
+                          <img class=" items-center h-16" src="src/logo-rental-alat-berat-surabaya 1.svg" alt="">
+                        
+                    </div>
+                    <!-- <p class="text-gray-300 max-w-md">
+                        We create innovative solutions for modern businesses. Our team is dedicated to delivering exceptional products and services that drive growth and success.
+                    </p> -->
+                    <!-- <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div> -->
+                </div>
+                
+                <!-- Column 2: Links & Contact -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <!-- Quick Links -->
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Menu</h3>
+                        <ul class="space-y-2">
+                            <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors duration-300">Home</a></li>
+                            <!-- <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">About Us</a></li> -->
+                            <li><a href="#Katalog" class="text-gray-300 hover:text-white transition-colors duration-300">Alat Kami</a></li>
+                            <li><a href="#porto" class="text-gray-300 hover:text-white transition-colors duration-300">Portfolio Proyek</a></li>
+                            <li><a href="https://wa.me/6281252496644?text=Halo,%20saya%20ingin%20menanyakan%20ketersediaan%20alat%20anda,%20apa%20masih%20tersedia%20?" class="text-gray-300 hover:text-white transition-colors duration-300">Kontak Kami</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="flex-col md:text-left items-start">
+                        <h3 class="text-lg font-semibold mb-2"> Alamat Kami</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start space-x-2">
+                                <i class="mt-1 text-blue-400"></i>
+                                <p class="text-gray-300">Jl. Dukuh Kupang Timur XIII No.14, Pakis,
+                            Kec. Sawahan, Surabaya, Jawa Timur 60256</p>
+                            </li>
+                            <!-- <li class="flex items-start space-x-2">
+                                <i class="fas fa-phone mt-1 text-blue-400"></i>
+                                <span class="text-gray-300">+1 (555) 123-4567</span>
+                            </li> -->
+                            <li class="flex items-start space-x-2">
+                                <i class="fas fa-envelope mt-1 text-blue-400"></i>
+                                <span class="text-gray-300">info@company.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-700 mt-8 pt-6 flex md:flex-row text-center justify-between items-center">
+                <p class="text-center text-gray-400 text-sm mb-4 md:mb-0">
+                    &copy; 2025 PT.Surya Trias Gemilang
+                </p>
+                <!-- <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors duration-300">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors duration-300">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm transition-colors duration-300">Cookie Policy</a>
+                </div> -->
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
